@@ -14,6 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('welcome');
+});
+
+
+Auth::routes(['verify' => true]);
+
+Route::get('/home', 'App\Http\Controllers\Homecontroller@index')->name('home')->middleware('verified');
+
+Route::get('/admin', function () {
     return view('admin.Home');
 });
 
@@ -27,3 +36,4 @@ Route::get('/gudang', 'App\Http\Controllers\GudangController@index')->name('guda
 
 Route::get('/pasien', 'App\Http\Controllers\PasienController@index')->name('pasien.index');
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

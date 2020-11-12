@@ -50,7 +50,7 @@
         $('#dataTable').DataTable({
             processing: true,
             serverSide: true,
-            ajax: "",
+            ajax: "q",
             columns: [{
                     data: 'DT_RowIndex',
                     orderable: false,
