@@ -50,7 +50,6 @@
         svg,
         video {
             display: block;
-            vertical-align: middle
         }
 
         video {
@@ -415,7 +414,7 @@
             padding: 8px 20px;
             border: 1px solid black;
             margin-right: 25px;
-            border-radius: 20px;
+            border-radius: 10px;
             background-color: white;
         }
     </style>
@@ -424,7 +423,7 @@
 <body class="antialiased">
     <div id="header" class=" header  top-0">
         <img src="{{ asset('images/logo.png') }}" alt="logo" width="35" srcset="">
-        <span style="color: white;" class="fofo">RS </span>Permata <br>
+        <span style="color: white;" class="fofo">RS </span>Permata Hati<br>
     </div>
     <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
 

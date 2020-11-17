@@ -1,0 +1,8 @@
+#header {
+    background-color: '#15cf46';
+    background-color: rgba(21, 207, 70, 0.8);
+    border-bottom: 1px solid black;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 2rem;
+}
